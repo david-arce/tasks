@@ -4,8 +4,6 @@ venv/
 # Ignore node_modules directory
 node_modules/
 
-# Ignore compiled Python files
-*.pyc
 
 # Ignore Django static files
 staticfiles/
@@ -29,33 +27,4 @@ logs/
 # Ignore cache files
 __pycache__/
 
-# Ignore compiled JavaScript files
-*.js
 
-# Ignore compiled CSS files
-*.css
-
-# Ignore compiled TypeScript files
-*.ts
-
-# Ignore compiled JSX files
-*.jsx
-
-# Ignore compiled JSX files
-*.tsx
-
-# Ignore compiled HTML files
-*.html
-
-# Ignore compiled image files
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.svg
-
-# Ignore compiled font files
-*.woff
-*.woff2
-*.ttf
-*.eot
