@@ -1,14 +1,21 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getAllTasks } from "../api/tasks.api";
+import { TaskCard } from "./TaskCard";
 
 export function TasksList(){
+    const [tasks, setTasks] = useState([]);
+
     useEffect(() => {
-        function loadTasks(){
-            const res = getAllTasks();
-            console.log(res);
+        async function loadTasks(){
+            const res = await getAllTasks();
+            setTasks(res.data);
         }
         loadTasks();
     }, []); // [] para que solo se ejecute una vez al montar la pagina
 
-    return <div>TaskList</div>
+    return <div>
+        {tasks.map(task => (
+            <TaskCard key = {task.id} task = {task}/>
+        ))}
+    </div>
 }
