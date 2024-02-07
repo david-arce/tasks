@@ -13,9 +13,11 @@ export function TasksList(){
         loadTasks();
     }, []); // [] para que solo se ejecute una vez al montar la pagina
 
-    return <div>
-        {tasks.map(task => (
-            <TaskCard key = {task.id} task = {task}/>
-        ))}
-    </div>
+    return( 
+        <div>
+            {tasks.map((task) => (
+                <TaskCard key = {task.id} task = {task}/>
+            ))}
+        </div>
+    );
 }
