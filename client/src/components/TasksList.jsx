@@ -14,7 +14,7 @@ export function TasksList(){
     }, []); // [] para que solo se ejecute una vez al montar la pagina
 
     return( 
-        <div>
+        <div className="grid grid-cols-3 gap-3">
             {tasks.map((task) => (
                 <TaskCard key = {task.id} task = {task}/>
             ))}
