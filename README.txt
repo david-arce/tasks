@@ -1,0 +1,2 @@
+Para ejecutar el proyecto hay que ejecutar el front desde la carpeta client y luego el comando npm run dev.
+Luego ejecutar el back entrando al entorno virtual ./venv/Scripts/activate y luego el comando py manage.py runserver
